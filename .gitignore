@@ -1,0 +1,7 @@
+target
+__MACOSX
+.idea
+src/.DS_Store
+src/main/.DS_Store
+src/main/java/.DS_Store
+src/main/java/com/.DS_Store
