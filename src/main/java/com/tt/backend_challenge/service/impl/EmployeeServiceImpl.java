@@ -61,7 +61,11 @@ public class EmployeeServiceImpl implements EmployeeService {
         return employeeRepository.findAll();
     }
 
-    public void deleteEmployee(Long employeeId){
+    @Transactional
+    public void deleteEmployee(Long employeeId) {
+        if (!employeeRepository.existsById(employeeId)) {
+            throw new EmployeeNotFoundException("Employee not found with id: " + employeeId);
+        }
         employeeRepository.deleteById(employeeId);
     }
 }

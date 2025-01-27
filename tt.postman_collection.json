@@ -16,7 +16,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\":\"yavuz\",\n    \"age\":34\n}",
+					"raw": "{\n    \"name\":\"ahmet\",\n    \"age\":40\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -66,14 +66,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/employee/1",
+					"raw": "localhost:8080/employee/2",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
 						"employee",
-						"1"
+						"2"
 					]
 				}
 			},
@@ -88,14 +88,14 @@
 				"method": "PATCH",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/employee/2/state?state=ACTIVATE",
+					"raw": "localhost:8080/employee/1/state?state=ACTIVATE",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
 						"employee",
-						"2",
+						"1",
 						"state"
 					],
 					"query": [
@@ -103,6 +103,28 @@
 							"key": "state",
 							"value": "ACTIVATE"
 						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/employee/2",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/employee/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"2"
 					]
 				}
 			},
